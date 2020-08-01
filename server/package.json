@@ -2,7 +2,6 @@
   "name": "server",
   "version": "1.0.0",
   "description": "",
-  "main": "src/index.js",
   "scripts": {
     "build": "npm run build-ts && npm run lint",
     "build-ts": "tsc",
@@ -12,7 +11,7 @@
     "serve-debug": "nodemon --inspect dist/server.js",
     "start": "npm run serve",
     "test": "jest --forceExit --coverage --verbose",
-    "watch-node": "nodemon dist/server.js",
+    "watch-node": "nodemon dist/app.js",
     "watch-test": "npm run test -- --watchAll",
     "watch-ts": "tsc -w"
   },
@@ -41,6 +40,8 @@
     "typescript": "^3.9.7"
   },
   "dependencies": {
+    "@types/body-parser": "^1.19.0",
+    "body-parser": "^1.19.0",
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
