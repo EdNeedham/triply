@@ -3,6 +3,10 @@
 ---
 ### Checklist
 
-* [] Setup Server
-  * [] Install Dependencies
-  * [] Install Linter/Prettier
+* [] Server
+  * [x] Install Dependencies
+  * [x] Install Linter/Prettier
+  * [] Setup Express App
+  * [] Test Express App
+  * [] Setup Middlewares
+  * [] Test Middlewares
